@@ -4874,7 +4874,7 @@ const data = {
     },
   ],
 
-  cartItems: [
+  topRated: [
     {
       productName: "Moong Dal 2 kg",
       price: "246",
@@ -5060,6 +5060,7 @@ const data = {
       quantity: 1,
     },
   ],
+  cartItems: [],
 };
 
 export default data;
