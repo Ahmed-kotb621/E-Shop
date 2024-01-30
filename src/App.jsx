@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Cart from './pages/cart';
 import WishList from './pages/WishList';
@@ -10,9 +10,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<AppLayout />}>
+          <Route index element={<Navigate replace to="/" />} />
           <Route path="/" element={<Home />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/wishlist" element={<WishList />} />
+          <Route path="cart" element={<Cart />} />
+          <Route path="wishlist" element={<WishList />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
