@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<AppLayout />}>
-          <Route index element={<Navigate replace to="/" />} />
+          {/* <Route index element={<Navigate replace to="/" />} /> */}
           <Route path="/" element={<Home />} />
           <Route path="cart" element={<Cart />} />
           <Route path="wishlist" element={<WishList />} />
