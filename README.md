@@ -1,8 +1,26 @@
-# React + Vite
+## E-Shop
+E-shop is a front-end project built using react.js and tailwind css , it's a Single Page Applications (SPA) designed for shopping experience . User can explore diferrent catogories like (Groceries,Fashion,..etc) , add or remove items from cart , adjust item quantities, and see real-time price updates.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Installation and Usage 
+to run E-shop on your local machine, follow these steps:
+    1- ### Clone the Repository 
+    ```
+    git clone https://github.com/Ahmed-kotb621/shooper-E-Commerce.git
+    cd shooper-E-Commerce
+    ```
+    2- ### Install Dependancies
+    ```
+    npm i
+    ```
+    3- ### Run the Development Server
+    ```
+    npm run dev
+    ```
+    4- ### Open your Browser: visit (http://localhost:5173/) 
 
-Currently, two official plugins are available:
+## Technologies Used
+  * Vite
+  * React.js
+  * Tailwind css
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+        
