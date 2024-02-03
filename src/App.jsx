@@ -4,20 +4,30 @@ import Cart from './pages/cart';
 import WishList from './pages/WishList';
 import PageNotFound from './pages/PageNotFound';
 import AppLayout from './ui/AppLayout';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: Infinity,
+    },
+  },
+});
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<AppLayout />}>
-          {/* <Route index element={<Navigate replace to="/" />} /> */}
-          <Route path="/" element={<Home />} />
-          <Route path="cart" element={<Cart />} />
-          <Route path="wishlist" element={<WishList />} />
-        </Route>
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
-    </BrowserRouter>
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<AppLayout />}>
+            {/* <Route index element={<Navigate replace to="/" />} /> */}
+            <Route path="/" element={<Home />} />
+            <Route path="cart" element={<Cart />} />
+            <Route path="wishlist" element={<WishList />} />
+          </Route>
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </QueryClientProvider>
   );
 }
 

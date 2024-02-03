@@ -1,20 +1,26 @@
 import { useEffect, useState } from 'react';
+import { useQuery } from 'react-query';
+import { getCatogories } from '../services/categoryApi';
+import Spinner from './Spinner';
 
 function Catogories() {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    async function getCatogories() {
-      const res = await fetch(
-        `https://ahmed-kotb621.github.io/host_api/data.json`,
-      );
-      const data = await res.json();
-      const result = data.productData;
-      setData(result);
-    }
-    getCatogories();
-  }, []);
+  const {
+    isLoading,
+    isError,
+    data: catogories,
+  } = useQuery({
+    queryKey: ['catogories'],
+    queryFn: getCatogories,
+  });
+  if (isLoading) return <Spinner />;
 
-  return <div>{data.map((el) => console.log(el.cat_name))}</div>;
+  if (isError) {
+    console.log('Errorrr....');
+  }
+
+  return (
+    <div>{catogories.productData.map((el) => console.log(el.cat_name))}</div>
+  );
 }
 
 export default Catogories;
