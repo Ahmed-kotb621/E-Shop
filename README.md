@@ -3,9 +3,9 @@ E-shop is a front-end project built using react.js and tailwind css , it's a Sin
 
 ## Installation and Usage 
 to run E-shop on your local machine, follow these steps:
-    1- ### Clone the Repository 
+    ### 1-Clone the Repository <br/>
     ```
-    git clone https://github.com/Ahmed-kotb621/shooper-E-Commerce.git
+    git clone https://github.com/Ahmed-kotb621/shooper-E-Commerce.git <br/>
     cd shooper-E-Commerce
     ```
     2- ### Install Dependancies
