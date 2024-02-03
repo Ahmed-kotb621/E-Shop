@@ -11,17 +11,17 @@ function CarouselItem({ image, title, text }) {
       className="flex h-[500px] flex-col justify-around rounded-[50px] bg-cover bg-center p-8"
       style={{ backgroundImage: `url(${image})` }}
     >
-      <h1 className="leading-12 text-5xl font-semibold text-stone-700 sm:max-w-[50%]">
+      <h1 className="leading-12 text-5xl font-semibold text-stone-700 sm:max-w-[50%] md:max-w-[30%]">
         {title}
       </h1>
       <p className="text-xl text-stone-500">{text}</p>
-      <div className="relative mb-12">
+      <div className="relative mb-12 flex">
         <input
           type="text"
           placeholder="Your email address"
           className="h-12 rounded-3xl pl-10 placeholder:text-sm focus:outline-none"
         />
-        <button className="left-2 h-full translate-x-[-50px] rounded-3xl bg-green px-3 text-slate-100">
+        <button className="left-2 h-full translate-x-[-50px] rounded-3xl bg-green px-3 py-3 text-slate-100 ">
           Subscribe
         </button>
         <div className="absolute inset-y-0 top-0 flex items-center p-3 text-slate-500 ">

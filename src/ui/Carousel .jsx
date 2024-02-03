@@ -1,5 +1,5 @@
 import CarouselItem from './CarouselItem';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaAngleLeft } from 'react-icons/fa6';
 import { FaAngleRight } from 'react-icons/fa6';
 import image1 from '../assets/images/slider-1.jpg';
@@ -9,17 +9,47 @@ function Carousel() {
   const carousles = [
     <CarouselItem
       image={image1}
-      title=" Don't miss amazing grocery deals"
-      text="Sign Up for the daily newsletter"
+      title=" Don't miss amazing grocery deals."
+      text="Sign Up for the daily newsletter."
       key="1"
     />,
     <CarouselItem
       image={image2}
-      title="Fresh Vegetables, Big discount"
-      text="Save up to 50% on your first order"
+      title="Fresh Vegetables, Big discount."
+      text="Save up to 50% on your first order."
       key="2"
     />,
   ];
-  return <div>{carousles[1]}</div>;
+  const next = () => {
+    setCurrent((current + 1) % carousles.length);
+  };
+  const prev = () => {
+    setCurrent((current - 1 + carousles.length) % carousles.length);
+  };
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     next();
+  //   }, 3000);
+  //   return () => clearInterval(interval);
+  // }, [current]);
+  return (
+    <div className="relative">
+      {carousles[current]}
+      <div className="absolute inset-0 flex w-full items-center justify-between p-5 text-xl">
+        <button
+          onClick={() => prev()}
+          className="rounded-full bg-slate-50 bg-opacity-30 p-3 transition-all duration-300 hover:bg-slate-100"
+        >
+          <FaAngleLeft />
+        </button>
+        <button
+          onClick={() => next()}
+          className="rounded-full bg-slate-50 bg-opacity-30 p-3 transition-all duration-300 hover:bg-slate-100"
+        >
+          <FaAngleRight />
+        </button>
+      </div>
+    </div>
+  );
 }
 export default Carousel;

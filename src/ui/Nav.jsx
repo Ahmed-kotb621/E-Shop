@@ -3,11 +3,11 @@ import { NavLink } from 'react-router-dom';
 function Nav() {
   return (
     <nav>
-      <ul className="flex text-sm">
+      <ul className="flex text-sm sm:text-lg ">
         <li>
           <NavLink
             to="/"
-            className="mr-3 text-slate-600 transition-all  duration-200 hover:text-green active:text-green  aria-[current=page]:text-green"
+            className="mr-5 text-slate-600 transition-all  duration-200 hover:text-green active:text-green  aria-[current=page]:text-green"
           >
             Home
           </NavLink>
@@ -15,7 +15,7 @@ function Nav() {
         <li>
           <NavLink
             to="newProducts"
-            className="mr-3 text-slate-600 transition-all duration-200 hover:text-green active:text-green aria-[current-page]:text-green"
+            className="mr-5 text-slate-600 transition-all duration-200 hover:text-green active:text-green aria-[current-page]:text-green"
           >
             New Products
           </NavLink>
@@ -23,7 +23,7 @@ function Nav() {
         <li>
           <NavLink
             to="/categories"
-            className="mr-3 text-slate-600 transition-all duration-200 hover:text-green active:text-green aria-[current-page]:text-green"
+            className="mr-5 text-slate-600 transition-all duration-200 hover:text-green active:text-green aria-[current-page]:text-green"
           >
             Catogories
           </NavLink>
@@ -31,7 +31,7 @@ function Nav() {
         <li>
           <NavLink
             to="/about"
-            className="mr-3 text-slate-600 transition-all duration-200 hover:text-green active:text-green aria-[current-page]:text-green"
+            className="mr-5 text-slate-600 transition-all duration-200 hover:text-green active:text-green aria-[current-page]:text-green"
           >
             About
           </NavLink>
