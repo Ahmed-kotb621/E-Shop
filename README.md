@@ -19,9 +19,6 @@ To run E-shop on your local machine, follow these steps:
      npm run dev
      ```
 4. **Open your Browser: visit (http://localhost:5173/)** 
-  r browser:**
-    Open your web browser and go to [http://localhost:3000](http://localhost:3000) (replace with your project's URL or specified port).
- 
 
 
 ## Technologies Used
