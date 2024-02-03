@@ -1,25 +1,31 @@
-import { useEffect, useState } from 'react';
 import { useQuery } from 'react-query';
 import { getCatogories } from '../services/categoryApi';
 import Spinner from './Spinner';
-
+import CategoryItem from './CategoryItem';
+import fahionImage from '../assets/images/fashion.png';
+import electronicsImage from '../assets/images/electronics.png';
+import groceryImage from '../assets/images/grocery.png';
 function Catogories() {
-  const {
-    isLoading,
-    isError,
-    data: catogories,
-  } = useQuery({
+  const colors = ['#f0e8d5', '#ecffec', '#e7eaf3'];
+  const images = [groceryImage, electronicsImage, fahionImage];
+  const { isLoading, data: catogories } = useQuery({
     queryKey: ['catogories'],
     queryFn: getCatogories,
   });
+
   if (isLoading) return <Spinner />;
-
-  if (isError) {
-    console.log('Errorrr....');
-  }
-
+  console.log(catogories);
   return (
-    <div>{catogories.productData.map((el) => console.log(el.cat_name))}</div>
+    <div className="grid grid-cols-1 gap-5 p-5 md:grid-cols-2 lg:grid-cols-3">
+      {catogories.productData.map((el, i) => (
+        <CategoryItem
+          name={el.cat_name}
+          image={images[i]}
+          color={colors[i]}
+          key={i}
+        />
+      ))}
+    </div>
   );
 }
 
