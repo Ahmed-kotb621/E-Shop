@@ -1,11 +1,11 @@
 <mxfile host="65bd71144e">
     <diagram id="feeelQbg_FDXUZ-O47BR" name="Page-1">
-        <mxGraphModel dx="879" dy="392" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="896" dy="392" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="58" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="40" width="680" height="630" as="geometry"/>
+                    <mxGeometry x="40" y="35" width="680" height="770" as="geometry"/>
                 </mxCell>
                 <mxCell id="59" value="🛒Shooper" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=3;fontFamily=Comic Sans MS;fontSize=16;" parent="1" vertex="1">
                     <mxGeometry x="60" y="50" width="90" height="30" as="geometry"/>
@@ -51,7 +51,7 @@
                 <mxCell id="72" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Garamond;fontSize=12;fontColor=#00CC00;arcSize=27;" parent="1" vertex="1">
                     <mxGeometry x="70" y="170" width="620" height="160" as="geometry"/>
                 </mxCell>
-                <mxCell id="73" value="Fresh Vegetables&lt;br style=&quot;font-size: 26px;&quot;&gt;Big Discount." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Tahoma;fontSize=26;fontColor=#FFFFFF;" parent="1" vertex="1">
+                <mxCell id="73" value="Air Max" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Tahoma;fontSize=26;fontColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="100" y="200" width="250" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="74" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Tahoma;fontSize=26;fontColor=#FFFFFF;arcSize=50;" parent="1" vertex="1">
@@ -60,20 +60,47 @@
                 <mxCell id="75" value="subsrcibe" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Garamond;fontSize=21;fontColor=#FFFFFF;arcSize=50;" parent="1" vertex="1">
                     <mxGeometry x="330" y="260" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="76" value="Sneakers" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="76" value="Sneakers" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="60" y="360" width="80" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="77" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="77" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="150" y="360" width="80" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="80" value="Sneakers" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="80" value="Sneakers" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="150" y="360" width="80" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="81" value="Sneakers" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="81" value="Sneakers" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="240" y="360" width="80" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="82" value="Sneakers" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="82" value="Sneakers" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="330" y="360" width="80" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="540" width="180" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="" style="shape=image;html=1;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=1;aspect=fixed;image=img/clipart/Gear_128x128.png" vertex="1" parent="1">
+                    <mxGeometry x="357" y="570" width="66" height="77.42" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=#60a917;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="550" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=#d80073;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+                    <mxGeometry x="430" y="550" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=#1ba1e2;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+                    <mxGeometry x="415" y="550" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="Air Max 270" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=3;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="350" y="660" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="150.00 $" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=3;fontStyle=1;fontColor=#66B2FF;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="680" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="" style="dashed=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;shape=mxgraph.gmdl.heart;strokeColor=none;fillColor=#737373;shadow=0;sketch=0;strokeWidth=3;fontColor=#66B2FF;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="720" width="20" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="" style="dashed=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;shape=mxgraph.gmdl.chat;strokeColor=none;fillColor=#737373;shadow=0;sketch=0;strokeWidth=3;fontColor=#66B2FF;" vertex="1" parent="1">
+                    <mxGeometry x="403" y="720" width="20" height="20" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

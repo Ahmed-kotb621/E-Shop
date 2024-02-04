@@ -1,9 +1,9 @@
 import { FaArrowRightLong } from 'react-icons/fa6';
 
-function CategoryItem({ name, color, image }) {
+function CategoryItem({ name, color, image, price }) {
   return (
     <div
-      className="group flex cursor-pointer items-center justify-between rounded-3xl px-8 py-12  "
+      className="group flex  items-center justify-between rounded-3xl px-8 py-12  "
       style={{ backgroundColor: `${color}` }}
     >
       <div className="flex h-full flex-col justify-around">
@@ -14,7 +14,12 @@ function CategoryItem({ name, color, image }) {
           shop now <FaArrowRightLong />
         </button>
       </div>
-      <img src={image} alt={name} className="h-[150px] md:h-[200px]" />
+      <img
+        src={image}
+        alt={name}
+        className="h-[120px] w-[120px] sm:h-[150px] md:h-[200px]"
+      />
+      <p>{price}$</p>
     </div>
   );
 }

@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="p-8">
       <Carousel />
-      <Heading text="Categories" />
+      <Heading text="Trending Sneakers" />
       <Catogories />
     </div>
   );

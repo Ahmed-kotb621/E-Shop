@@ -3,11 +3,11 @@ import { NavLink } from 'react-router-dom';
 function Nav() {
   return (
     <nav>
-      <ul className="flex text-sm sm:text-lg ">
+      <ul className="flex text-sm   ">
         <li>
           <NavLink
             to="/"
-            className="mr-5 text-slate-600 transition-all  duration-200 hover:text-green active:text-green  aria-[current=page]:text-green"
+            className="hover:text-yellowC active:text-yellowC aria-[current=page]:text-yellowC  mr-5 text-slate-600 transition-all  duration-200"
           >
             Home
           </NavLink>
@@ -15,7 +15,7 @@ function Nav() {
         <li>
           <NavLink
             to="newProducts"
-            className="mr-5 text-slate-600 transition-all duration-200 hover:text-green active:text-green aria-[current-page]:text-green"
+            className="hover:text-yellowC active:tex-yellowCn aria-[current-page]:text-yellowC mr-5 text-slate-600 transition-all duration-200"
           >
             New Products
           </NavLink>
@@ -23,7 +23,7 @@ function Nav() {
         <li>
           <NavLink
             to="/categories"
-            className="mr-5 text-slate-600 transition-all duration-200 hover:text-green active:text-green aria-[current-page]:text-green"
+            className="hover:text-yellowC active:tex-yellowCn aria-[current-page]:text-yellowC mr-5 text-slate-600 transition-all duration-200"
           >
             Catogories
           </NavLink>
@@ -31,7 +31,7 @@ function Nav() {
         <li>
           <NavLink
             to="/about"
-            className="mr-5 text-slate-600 transition-all duration-200 hover:text-green active:text-green aria-[current-page]:text-green"
+            className="hover:text-yellowC active:tex-yellowCn aria-[current-page]:text-yellowC mr-5 text-slate-600 transition-all duration-200"
           >
             About
           </NavLink>

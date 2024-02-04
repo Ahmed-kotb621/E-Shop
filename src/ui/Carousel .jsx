@@ -2,8 +2,8 @@ import CarouselItem from './CarouselItem';
 import { useEffect, useState } from 'react';
 import { FaAngleLeft } from 'react-icons/fa6';
 import { FaAngleRight } from 'react-icons/fa6';
-import image1 from '../assets/images/slider-1.jpg';
-import image2 from '../assets/images/black-friday-elements-assortment.jpg';
+import image1 from '../assets/images/fashion-shoes2.png';
+import image2 from '../assets/images/hero-img2.png';
 function Carousel() {
   const [current, setCurrent] = useState(0);
   const carousles = [
@@ -38,13 +38,13 @@ function Carousel() {
       <div className="absolute inset-0 flex w-full items-center justify-between p-5 text-xl">
         <button
           onClick={() => prev()}
-          className="rounded-full bg-slate-50 bg-opacity-30 p-3 transition-all duration-300 hover:bg-slate-100"
+          className="bg-greyC rounded-full bg-opacity-30 p-3 transition-all duration-300 hover:bg-slate-100"
         >
           <FaAngleLeft />
         </button>
         <button
           onClick={() => next()}
-          className="rounded-full bg-slate-50 bg-opacity-30 p-3 transition-all duration-300 hover:bg-slate-100"
+          className="bg-greyC rounded-full  bg-opacity-30 p-3 transition-all duration-300 hover:bg-slate-100"
         >
           <FaAngleRight />
         </button>

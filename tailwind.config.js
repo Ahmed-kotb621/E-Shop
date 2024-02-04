@@ -8,6 +8,10 @@ export default {
     extend: {
       colors: {
         green: '#20bf55',
+        mainC: '#010101',
+        secondaryC: '#f2f0ea',
+        yellowC: '#edcf5d',
+        greyC: '#a4a4a4',
       },
       fontFamily: {
         logo: 'cursive',
