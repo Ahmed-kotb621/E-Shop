@@ -16,13 +16,12 @@ function Catogories() {
   if (isLoading) return <Spinner />;
   console.log(catogories.trending);
   return (
-    <div className="grid grid-cols-1 gap-5 p-5 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-5 p-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {catogories.trending.map((el, i) => (
         <CategoryItem
-          name={el.brand_name}
+          name={el.name}
           image={el.grid_picture_url}
-          color={el.color}
-          price={el.name}
+          price={el.retail_price_cents}
           key={i}
         />
       ))}
