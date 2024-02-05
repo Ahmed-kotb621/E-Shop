@@ -1,10 +1,11 @@
 import Carousel from '../ui/Carousel ';
 import Catogories from '../ui/Catogories';
+import Footer from '../ui/Footer';
 import Heading from '../ui/Heading';
 
 function Home() {
   return (
-    <div className="p-8">
+    <div>
       <Carousel />
       <Heading text="Trending Sneakers" />
       <Catogories />

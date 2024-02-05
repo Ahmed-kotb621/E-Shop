@@ -7,31 +7,31 @@ function Nav() {
         <li>
           <NavLink
             to="/"
-            className="hover:text-yellowC active:text-yellowC aria-[current=page]:text-yellowC  mr-5 text-slate-600 transition-all  duration-200"
+            className="mr-5 text-slate-600 transition-all  duration-200 hover:text-yellowC active:text-yellowC  aria-[current=page]:text-yellowC"
           >
             Home
           </NavLink>
         </li>
         <li>
           <NavLink
-            to="newProducts"
-            className="hover:text-yellowC active:tex-yellowCn aria-[current-page]:text-yellowC mr-5 text-slate-600 transition-all duration-200"
+            to="/men"
+            className="active:tex-yellowCn mr-5 text-slate-600 transition-all duration-200 hover:text-yellowC aria-[current-page]:text-yellowC"
           >
-            New Products
+            Men
           </NavLink>
         </li>
         <li>
           <NavLink
-            to="/categories"
-            className="hover:text-yellowC active:tex-yellowCn aria-[current-page]:text-yellowC mr-5 text-slate-600 transition-all duration-200"
+            to="/women"
+            className="active:tex-yellowCn mr-5 text-slate-600 transition-all duration-200 hover:text-yellowC aria-[current-page]:text-yellowC"
           >
-            Catogories
+            Women
           </NavLink>
         </li>
         <li>
           <NavLink
             to="/about"
-            className="hover:text-yellowC active:tex-yellowCn aria-[current-page]:text-yellowC mr-5 text-slate-600 transition-all duration-200"
+            className="active:tex-yellowCn mr-5 text-slate-600 transition-all duration-200 hover:text-yellowC aria-[current-page]:text-yellowC"
           >
             About
           </NavLink>

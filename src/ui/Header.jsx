@@ -11,7 +11,7 @@ import Nav from './Nav';
 function Header() {
   const [isOpen, setIsopen] = useState(false);
   return (
-    <div className="flex flex-col border-b-[1px] px-8 py-3 md:items-center md:justify-between">
+    <div className="mt-2 flex flex-col border-b-[1px] px-8 py-3 md:items-center md:justify-between lg:px-20">
       <div className="w-full   pb-3.5 md:flex md:items-center md:justify-between">
         <Logo />
         <Search />

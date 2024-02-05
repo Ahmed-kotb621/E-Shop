@@ -33,18 +33,18 @@ function Carousel() {
   //   return () => clearInterval(interval);
   // }, [current]);
   return (
-    <div className="relative">
+    <div className="relative p-8">
       {carousles[current]}
-      <div className="absolute inset-0 flex w-full items-center justify-between p-5 text-xl">
+      <div className="absolute inset-0 flex w-full items-center justify-between p-12 text-xl">
         <button
           onClick={() => prev()}
-          className="bg-greyC rounded-full bg-opacity-30 p-3 transition-all duration-300 hover:bg-slate-100"
+          className="rounded-full bg-greyC bg-opacity-30 p-3 transition-all duration-300 hover:bg-slate-100"
         >
           <FaAngleLeft />
         </button>
         <button
           onClick={() => next()}
-          className="bg-greyC rounded-full  bg-opacity-30 p-3 transition-all duration-300 hover:bg-slate-100"
+          className="rounded-full bg-greyC  bg-opacity-30 p-3 transition-all duration-300 hover:bg-slate-100"
         >
           <FaAngleRight />
         </button>
