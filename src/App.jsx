@@ -5,6 +5,10 @@ import WishList from './pages/WishList';
 import PageNotFound from './pages/PageNotFound';
 import AppLayout from './ui/AppLayout';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import ItemDetails from './pages/Item';
+import Men from './pages/Men';
+import Women from './pages/Women';
+import About from './pages/About';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -23,6 +27,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="cart" element={<Cart />} />
             <Route path="wishlist" element={<WishList />} />
+            <Route path="item/:id" element={<ItemDetails />} />
+            <Route path="men" element={<Men />} />
+            <Route path="women" element={<Women />} />
+            <Route path="about" element={<About />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>

@@ -26,3 +26,5 @@ To run E-shop on your local machine, follow these steps:
 - Vite
 - React.js
 - Tailwind css
+- Css Modules
+- Hooks (useState,useEffect,useParams)

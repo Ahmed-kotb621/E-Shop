@@ -1,4 +1,4 @@
-export async function getCatogories() {
+export async function getItems() {
   try {
     const res = await fetch(
       `https://ahmed-kotb621.github.io/host_api/data.json`,

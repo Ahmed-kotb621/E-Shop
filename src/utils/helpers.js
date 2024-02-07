@@ -8,7 +8,7 @@ export function textSlice(str) {
 
 // return formating currency from cents to dollers
 export function formateCurrency(cents) {
-  let dollars = cents / 1000;
+  let dollars = cents / 100;
   let curreny = new Intl.NumberFormat('en-us', {
     style: 'currency',
     currency: 'USD',

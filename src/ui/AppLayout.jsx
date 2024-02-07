@@ -3,9 +3,9 @@ import Header from './Header';
 import Footer from './Footer';
 function AppLayout() {
   return (
-    <div>
+    <div className="flex min-h-screen flex-col">
       <Header />
-      <main className="lg:px-16">
+      <main className="flex-grow lg:px-16">
         <Outlet />
       </main>
       <Footer />

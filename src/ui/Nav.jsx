@@ -15,7 +15,7 @@ function Nav() {
         <li>
           <NavLink
             to="/men"
-            className="active:tex-yellowCn mr-5 text-slate-600 transition-all duration-200 hover:text-yellowC aria-[current-page]:text-yellowC"
+            className="mr-5 text-slate-600 transition-all  duration-200 hover:text-yellowC active:text-yellowC  aria-[current=page]:text-yellowC"
           >
             Men
           </NavLink>
@@ -23,7 +23,7 @@ function Nav() {
         <li>
           <NavLink
             to="/women"
-            className="active:tex-yellowCn mr-5 text-slate-600 transition-all duration-200 hover:text-yellowC aria-[current-page]:text-yellowC"
+            className="mr-5 text-slate-600 transition-all  duration-200 hover:text-yellowC active:text-yellowC  aria-[current=page]:text-yellowC"
           >
             Women
           </NavLink>
@@ -31,7 +31,7 @@ function Nav() {
         <li>
           <NavLink
             to="/about"
-            className="active:tex-yellowCn mr-5 text-slate-600 transition-all duration-200 hover:text-yellowC aria-[current-page]:text-yellowC"
+            className="mr-5 text-slate-600 transition-all  duration-200 hover:text-yellowC active:text-yellowC  aria-[current=page]:text-yellowC"
           >
             About
           </NavLink>

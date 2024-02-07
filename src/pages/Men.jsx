@@ -1,17 +1,21 @@
 import { useQuery } from 'react-query';
 import { getItems } from '../services/itemsApi';
-import Spinner from './Spinner';
-import CategoryItem from './CategoryItem';
-function Catogories() {
-  const { isLoading, data: catogories } = useQuery({
+import Spinner from '../ui/Spinner';
+import CategoryItem from '../ui/CategoryItem';
+
+function Men() {
+  const { data, isLoading } = useQuery({
     queryKey: ['item'],
     queryFn: getItems,
   });
 
   if (isLoading) return <Spinner />;
+
+  const menItems = data?.products.filter((el) => el.gender[0] === 'men');
+  console.log(menItems);
   return (
     <div className="grid grid-cols-1 gap-6 p-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-      {catogories.trending.map((el, i) => (
+      {menItems.map((el, i) => (
         <CategoryItem
           name={el.name}
           image={el.grid_picture_url}
@@ -26,4 +30,4 @@ function Catogories() {
   );
 }
 
-export default Catogories;
+export default Men;
