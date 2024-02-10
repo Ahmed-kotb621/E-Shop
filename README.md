@@ -27,4 +27,5 @@ To run E-shop on your local machine, follow these steps:
 - React.js
 - Tailwind css
 - Css Modules
-- Hooks (useState,useEffect,useParams)
+- Hooks (useState,useEffect,useParams).
+- State Management (Redux, Redux toolkit)

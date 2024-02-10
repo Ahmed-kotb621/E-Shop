@@ -16,15 +16,7 @@ function Women() {
   return (
     <div className="grid grid-cols-1 gap-6 p-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
       {menItems.map((el, i) => (
-        <CategoryItem
-          name={el.name}
-          image={el.grid_picture_url}
-          price={el.retail_price_cents}
-          color={el.color}
-          gender={el.gender[0]}
-          id={el.id}
-          key={i}
-        />
+        <CategoryItem item={el} key={i} />
       ))}
     </div>
   );

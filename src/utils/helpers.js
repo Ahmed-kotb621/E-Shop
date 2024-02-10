@@ -1,5 +1,5 @@
 // return part from long text
-export function textSlice(str) {
+export function formateText(str) {
   let arr = str.split(' ');
   if (arr.length < 3) return str;
   let string = arr.slice(0, 3).join(' ') + '...';

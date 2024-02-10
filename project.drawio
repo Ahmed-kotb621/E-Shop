@@ -1,11 +1,11 @@
 <mxfile host="65bd71144e">
     <diagram id="feeelQbg_FDXUZ-O47BR" name="Page-1">
-        <mxGraphModel dx="896" dy="402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="872" dy="391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="58" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="35" width="680" height="1015" as="geometry"/>
+                    <mxGeometry x="40" y="35" width="680" height="725" as="geometry"/>
                 </mxCell>
                 <mxCell id="59" value="🛒Shooper" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=3;fontFamily=Comic Sans MS;fontSize=16;" parent="1" vertex="1">
                     <mxGeometry x="60" y="50" width="90" height="30" as="geometry"/>
@@ -101,6 +101,15 @@
                 </mxCell>
                 <mxCell id="93" value="" style="dashed=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;shape=mxgraph.gmdl.chat;strokeColor=none;fillColor=#737373;shadow=0;sketch=0;strokeWidth=3;fontColor=#66B2FF;" parent="1" vertex="1">
                     <mxGeometry x="163" y="680" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="800" width="680" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="Your Cart" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="840" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="1x sneaker" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="65" y="930" width="80" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
