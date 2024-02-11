@@ -41,7 +41,7 @@ function CartItem({ cart }) {
           alt={name}
           className="m-2 h-20 rounded-md bg-secondaryC"
         />
-        <p>{formateText(name)}</p>
+        <p>{formateText(name, 3)}</p>
       </div>
       <div className="flex items-center justify-end">
         <p>{<Colors color={color} width="15px" height="15px" />}</p>

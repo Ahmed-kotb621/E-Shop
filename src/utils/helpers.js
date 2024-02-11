@@ -1,8 +1,8 @@
 // return part from long text
-export function formateText(str) {
+export function formateText(str, length) {
   let arr = str.split(' ');
   if (arr.length < 3) return str;
-  let string = arr.slice(0, 3).join(' ') + '...';
+  let string = arr.slice(0, length).join(' ') + '...';
   return string;
 }
 

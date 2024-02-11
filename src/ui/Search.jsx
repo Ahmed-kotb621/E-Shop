@@ -16,9 +16,12 @@ function Search() {
     queryFn: getItems,
   });
 
-  const filtered = data?.products.filter((el) =>
-    el.name.toLowerCase().includes(query.toLowerCase()),
-  );
+  const filtered =
+    query.length > 0
+      ? data?.products.filter((el) =>
+          el.name.toLowerCase().includes(query.toLowerCase()),
+        )
+      : null;
 
   return (
     <div className="relative sm:block">
@@ -36,7 +39,9 @@ function Search() {
         </div>
       </div>
       <div className="absolute bottom-[-40px] h-5 w-full">
-        {isFocued && <SearchResult filtered={filtered} />}
+        {isFocued && query.length > 0 && (
+          <SearchResult filtered={filtered} setIsFocused={setIsFocused} />
+        )}
       </div>
     </div>
   );

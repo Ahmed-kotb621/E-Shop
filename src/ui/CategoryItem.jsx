@@ -47,7 +47,7 @@ function CategoryItem({ item }) {
         </div>
       </div>
       <p className="w-full text-center font-semibold text-mainC">
-        {formateText(name)}
+        {formateText(name, 3)}
       </p>
       <div className="mt-2 flex w-full items-center justify-between text-xl">
         <p className="text-sm font-bold">

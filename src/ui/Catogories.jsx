@@ -9,9 +9,6 @@ function Catogories() {
   });
 
   if (isLoading) return <Spinner />;
-  const filtered = catogories.products.filter((el) =>
-    el.brand_name.toLowerCase().includes(''),
-  );
 
   return (
     <div className="grid grid-cols-1 gap-6 p-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
