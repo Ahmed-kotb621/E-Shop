@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Colors from './Colors';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../features/cart/cartSlice';
+import { addToWish } from '../features/wishList/wishSlice';
 
 function CategoryItem({ item }) {
   const {
@@ -22,6 +23,9 @@ function CategoryItem({ item }) {
 
   function handleAdd() {
     dispatch(addToCart(newItem));
+  }
+  function handleAddWish() {
+    dispatch(addToWish(item));
   }
   return (
     <div className="flex flex-col items-center justify-between overflow-hidden rounded-2xl bg-secondaryC p-5">
@@ -59,7 +63,10 @@ function CategoryItem({ item }) {
           >
             <FiShoppingBag />
           </button>
-          <button className="rounded-md bg-white p-1 text-mainC shadow-md transition-colors duration-300 hover:bg-mainC hover:text-secondaryC">
+          <button
+            className="rounded-md bg-white p-1 text-mainC shadow-md transition-colors duration-300 hover:bg-mainC hover:text-secondaryC"
+            onClick={() => handleAddWish()}
+          >
             <MdFavoriteBorder />
           </button>
         </div>
