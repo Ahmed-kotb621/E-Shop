@@ -11,7 +11,7 @@ function Search() {
     setIsFocused(true);
   }
 
-  const { data, isLoading } = useQuery({
+  const { data } = useQuery({
     queryKey: ['item'],
     queryFn: getItems,
   });
@@ -40,7 +40,11 @@ function Search() {
       </div>
       <div className="absolute bottom-[-40px] h-5 w-full">
         {isFocued && query.length > 0 && (
-          <SearchResult filtered={filtered} setIsFocused={setIsFocused} />
+          <SearchResult
+            filtered={filtered}
+            setIsFocused={setIsFocused}
+            setQuery={setQuery}
+          />
         )}
       </div>
     </div>

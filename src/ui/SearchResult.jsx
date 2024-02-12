@@ -1,11 +1,15 @@
 import SearchItem from './SearchItem';
 
-function SearchResult({ filtered, setIsFocused }) {
+function SearchResult({ filtered, setIsFocused, setQuery }) {
+  function handleClick() {
+    setIsFocused(false);
+    setQuery('');
+  }
   return (
     <div className="no-scrollbar relative h-[400px] overflow-scroll  rounded-lg border-2  bg-slate-100 shadow-lg">
       <button
         className="absolute right-3 h-5 w-5   text-4xl  text-gray-800"
-        onClick={() => setIsFocused(false)}
+        onClick={() => handleClick()}
       >
         &times;
       </button>
@@ -15,6 +19,7 @@ function SearchResult({ filtered, setIsFocused }) {
           name={item.name}
           id={item.id}
           setIsFocused={setIsFocused}
+          setQuery={setQuery}
           key={item.id}
         />
       ))}

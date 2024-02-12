@@ -1,8 +1,10 @@
 import { useDispatch } from 'react-redux';
 import { formateCurrency, formateText } from '../../utils/helpers';
 import Colors from '../../ui/Colors';
-import { AiOutlineDelete } from 'react-icons/ai';
+import { AiOutlineDelete, AiOutlineShoppingCart } from 'react-icons/ai';
 import { deleteFromWishList } from './wishSlice';
+import { FiShoppingBag } from 'react-icons/fi';
+import { addToCart } from '../cart/cartSlice';
 
 function WishListItem({ wishItem }) {
   const {
@@ -17,7 +19,9 @@ function WishListItem({ wishItem }) {
   function handleDelete(id) {
     dispatch(deleteFromWishList(id));
   }
-
+  function handleAddToCart(item) {
+    dispatch(addToCart(item));
+  }
   return (
     <div className="grid grid-cols-3 items-center justify-between border-b">
       <div className="flex items-center justify-start ">
@@ -34,7 +38,13 @@ function WishListItem({ wishItem }) {
       </div>
       <div className="flex justify-around px-10">
         <button
-          className=" text-2xl text-red-600"
+          className=" text-xl text-mainC hover:text-greyC"
+          onClick={() => handleAddToCart(wishItem)}
+        >
+          <FiShoppingBag />
+        </button>
+        <button
+          className=" text-2xl text-red-600 hover:text-red-400"
           onClick={() => handleDelete(id)}
         >
           <AiOutlineDelete />
