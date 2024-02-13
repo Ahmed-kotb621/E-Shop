@@ -11,6 +11,7 @@ import Women from './pages/Women';
 import About from './pages/About';
 import { Provider } from 'react-redux';
 import { store } from '../store';
+import { Toaster } from 'react-hot-toast';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -38,6 +39,22 @@ function App() {
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </BrowserRouter>
+        <Toaster
+          position="top-center"
+          gutter={8}
+          containerStyle={{ margin: '8px' }}
+          toastOptions={{
+            success: { duration: 3000 },
+            error: { duration: 5000 },
+            style: {
+              fontSize: '16px',
+              maxWidth: '500px',
+              backgroundColor: '#fff',
+              padding: '16px 20px',
+              color: '#000',
+            },
+          }}
+        />
       </QueryClientProvider>
     </Provider>
   );

@@ -7,6 +7,7 @@ import Colors from './Colors';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../features/cart/cartSlice';
 import { addToWish } from '../features/wishList/wishSlice';
+import toast from 'react-hot-toast';
 
 function CategoryItem({ item }) {
   const {
@@ -23,9 +24,10 @@ function CategoryItem({ item }) {
 
   function handleAdd() {
     dispatch(addToCart(newItem));
+    toast.success('Item Added To Cart');
   }
   function handleAddWish() {
-    dispatch(addToWish(item));
+    dispatch(addToWish(newItem));
   }
   return (
     <div className="flex flex-col items-center justify-between overflow-hidden rounded-2xl bg-secondaryC p-5">

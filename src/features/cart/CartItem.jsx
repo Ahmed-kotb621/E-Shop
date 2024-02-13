@@ -16,6 +16,7 @@ function CartItem({ cart }) {
     color,
     grid_picture_url: image,
     retail_price_cents: price,
+    total_price,
     gender,
     id,
     quantity,
@@ -23,7 +24,6 @@ function CartItem({ cart }) {
   const dispatch = useDispatch();
   function handleDelete(id) {
     dispatch(deleteFromCart(id));
-    console.log(id);
   }
   function increaseQuantity(id) {
     dispatch(increaseCartQuantity(id));
@@ -45,7 +45,7 @@ function CartItem({ cart }) {
       </div>
       <div className="flex items-center justify-end">
         <p>{<Colors color={color} width="15px" height="15px" />}</p>
-        <p className="ml-10 font-semibold">{formateCurrency(price)}</p>
+        <p className="ml-10 font-semibold">{formateCurrency(total_price)}</p>
       </div>
       <div className="flex justify-around px-10">
         <div>

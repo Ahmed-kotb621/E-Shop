@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { formateCurrency, formateText } from '../../utils/helpers';
 import Colors from '../../ui/Colors';
-import { AiOutlineDelete, AiOutlineShoppingCart } from 'react-icons/ai';
+import { AiOutlineDelete } from 'react-icons/ai';
 import { deleteFromWishList } from './wishSlice';
 import { FiShoppingBag } from 'react-icons/fi';
 import { addToCart } from '../cart/cartSlice';
@@ -12,7 +12,6 @@ function WishListItem({ wishItem }) {
     color,
     grid_picture_url: image,
     retail_price_cents: price,
-    gender,
     id,
   } = wishItem;
   const dispatch = useDispatch();
@@ -30,7 +29,7 @@ function WishListItem({ wishItem }) {
           alt={name}
           className="m-2 h-20 rounded-md bg-secondaryC"
         />
-        <p>{formateText(name)}</p>
+        <p>{formateText(name, 4)}</p>
       </div>
       <div className="flex items-center justify-end">
         <p>{<Colors color={color} width="15px" height="15px" />}</p>

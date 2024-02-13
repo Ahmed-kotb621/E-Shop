@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import EmptyWishlist from '../features/wishList/EmptyWishlist';
 import WishListItem from '../features/wishList/WishListItem';
 import { clearWishList } from '../features/wishList/wishSlice';
+import toast from 'react-hot-toast';
 
 function WishList() {
   const wishList = useSelector((state) => state.wishList.wishList);
@@ -10,6 +11,7 @@ function WishList() {
 
   function handleClearList() {
     dispatch(clearWishList());
+    toast.success('List Cleared Successfully');
   }
   return (
     <div className="p-8">

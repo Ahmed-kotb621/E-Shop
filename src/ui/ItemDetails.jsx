@@ -7,6 +7,7 @@ import { useState } from 'react';
 import ReactImageMagnify from 'react-image-magnify';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../features/cart/cartSlice';
+import toast from 'react-hot-toast';
 
 function ItemDetails({ item }) {
   const dispatch = useDispatch();
@@ -29,8 +30,9 @@ function ItemDetails({ item }) {
     original_picture_url: largePicture,
     main_picture_url: main,
   } = item;
+
   function handleAdd() {
-    dispatch(addToCart({ ...item, selectedSize }));
+    dispatch(addToCart({ ...item, selectedSize, quantity: 1 }));
   }
   return (
     <div>
@@ -75,7 +77,10 @@ function ItemDetails({ item }) {
           <div className="mt-3 flex w-full">
             <button
               className="flex flex-grow items-center justify-center space-x-3 rounded-md bg-mainC px-5 py-1 text-secondaryC"
-              onClick={() => handleAdd()}
+              onClick={() => {
+                handleAdd();
+                toast.success('Item Added Successfully');
+              }}
             >
               <span className="mr-3 inline-block">
                 <FiShoppingBag />
