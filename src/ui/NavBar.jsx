@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { FiShoppingBag } from 'react-icons/fi';
-
+import { FaRegUser } from 'react-icons/fa';
 import { MdFavoriteBorder } from 'react-icons/md';
 import { useSelector } from 'react-redux';
 function NavBar() {
@@ -32,6 +32,12 @@ function NavBar() {
             ) : (
               ''
             )}
+          </NavLink>
+        </li>
+        <li className="relative flex items-center space-x-1">
+          <NavLink to="/login" className="flex items-center gap-2 text-lg">
+            <FaRegUser />
+            Account
           </NavLink>
         </li>
       </ul>

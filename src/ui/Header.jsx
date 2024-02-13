@@ -4,7 +4,7 @@ import Logo from './Logo';
 import NavBar from './NavBar';
 import Search from './Search';
 import { useState } from 'react';
-import Aside from './Aside';
+
 import image from '../assets/images/shopping-bag.png';
 import { Link, NavLink } from 'react-router-dom';
 import Nav from './Nav';
