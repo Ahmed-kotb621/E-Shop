@@ -13,7 +13,8 @@ function NavBar() {
       <ul className="text-md relative flex items-center  space-x-4 text-mainC">
         <li className="flex items-center text-lg">
           <NavLink to="/wishlist" className="flex items-center gap-2 text-lg">
-            <MdFavoriteBorder /> Wishlist
+            <MdFavoriteBorder />{' '}
+            <span className="hidden md:block"> Wishlist</span>
             {wish.length ? (
               <span className="absolute left-[7px] top-[-5px]  flex   h-4 w-4 items-center justify-center rounded-full bg-yellowC text-sm">
                 {wish.length}
@@ -26,7 +27,8 @@ function NavBar() {
         <li className="relative flex items-center space-x-1">
           <NavLink to="/cart" className="flex items-center gap-2 text-lg">
             <FiShoppingBag />
-            Cart
+
+            <span className="hidden md:block"> Cart</span>
             {cart.length ? (
               <span className="absolute left-[7px] top-[-5px]  flex   h-4 w-4  items-center justify-center rounded-full bg-yellowC text-sm">
                 {cart.length}

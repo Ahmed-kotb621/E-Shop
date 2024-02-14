@@ -2,6 +2,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { deleteUser } from '../user/userSlice';
 import toast from 'react-hot-toast';
 import OrderItem from '../../ui/OrderItem';
+import { dateAfterOneWeek } from '../../utils/helpers';
+import EmptyOrder from '../../ui/EmptyOrder';
 
 function Order() {
   const user = useSelector((state) => state.user.user);
@@ -29,14 +31,24 @@ function Order() {
       </div>
       <div className="flex w-full flex-col items-center justify-center sm:w-[500px]">
         <h2 className="my-7 text-lg font-bold">Your Order</h2>
-        {allorders.map((el, i) => (
-          <OrderItem
-            key={i}
-            quantity={el.quantity}
-            name={el.name}
-            color={el.color}
-          />
-        ))}
+        <h3 className="my-2">
+          Estimated Time :{' '}
+          <span className="rounded-md bg-yellowC p-1">
+            {dateAfterOneWeek()}
+          </span>
+        </h3>
+        {allorders ? (
+          allorders.map((el, i) => (
+            <OrderItem
+              key={i}
+              quantity={el.quantity}
+              name={el.name}
+              color={el.color}
+            />
+          ))
+        ) : (
+          <EmptyOrder />
+        )}
       </div>
     </div>
   );

@@ -22,7 +22,7 @@ function LogIn() {
     e.preventDefault();
     dispatch(addUser(formData));
     toast.success('LogIn Successfully');
-    navigate('/');
+    navigate('/login');
   }
   if (user.length > 0) {
     return <Order />;
