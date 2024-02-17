@@ -14,16 +14,19 @@ function WishListItem({ wishItem }) {
     retail_price_cents: price,
     id,
   } = wishItem;
+
   const dispatch = useDispatch();
+
   function handleDelete(id) {
     dispatch(deleteFromWishList(id));
   }
   function handleAddToCart(item) {
     dispatch(addToCart(item));
   }
+
   return (
     <div className="grid grid-cols-3 items-center justify-between border-b">
-      <div className="flex items-center justify-start ">
+      <div className="col-span-2 col-start-1 flex items-center justify-start sm:col-span-1 ">
         <img
           src={image}
           alt={name}
@@ -35,7 +38,7 @@ function WishListItem({ wishItem }) {
         <p>{<Colors color={color} width="15px" height="15px" />}</p>
         <p className="ml-10 font-semibold">{formateCurrency(price)}</p>
       </div>
-      <div className="flex justify-around px-10">
+      <div className="col-start-3 my-2 flex justify-around sm:px-10">
         <button
           className=" text-xl text-mainC hover:text-greyC"
           onClick={() => handleAddToCart(wishItem)}

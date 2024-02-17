@@ -13,3 +13,7 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+
+.form-input {
+  @apply rounded-md border-none bg-secondaryC  p-2 text-[16px] focus:outline-none focus:ring focus:ring-yellowC focus:ring-offset-2;
+}

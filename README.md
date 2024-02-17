@@ -1,6 +1,6 @@
 ## E-Shop
 
-E-shop is a front-end project built using react.js and tailwind css , it's a Single Page Applications (SPA) designed for shopping experience . User can explore diferrent catogories like (Groceries,Fashion,..etc) , add or remove items from cart , adjust item quantities, and see real-time price updates.
+E-shop is a front-end project built using react.js and tailwind css , it's a Single Page Applications (SPA) designed for shopping experience . User can explore diferrent sneakers , add or remove items from cart and wishlist , user register with name and email , adjust item quantities,see real-time price updates and placing order.
 
 ## Installation and Usage
 
@@ -8,8 +8,8 @@ To run E-shop on your local machine, follow these steps:
 
 1. **Clone the Repository :**
    ```bash
-   git clone https://github.com/Ahmed-kotb621/shooper-E-Commerce.git
-   cd shooper-E-Commerce
+   git clone https://github.com/Ahmed-kotb621/sneakers.git
+   cd sneakers
    ```
 2. **Install Dependancies :**
    ```bash
@@ -25,7 +25,12 @@ To run E-shop on your local machine, follow these steps:
 
 - Vite
 - React.js
+- React Query.
 - Tailwind css
 - Css Modules
-- Hooks (useState,useEffect,useParams).
-- State Management (Redux, Redux toolkit)
+- Hooks (useState,useEffect,useParams,useNavigate).
+- State Management (Redux, Redux toolkit).
+- react icons & react hot toast.
+- Fake Authonication protecting a route.
+
+## Deployment

@@ -1,6 +1,6 @@
 import RatingBar from './RatingBar';
 
-function Details({ brand, year, name, rating, color, designer, gender }) {
+function Details({ brand, year, name, rating, designer, gender }) {
   return (
     <div className="mt-8 flex flex-col    border-t p-8 text-sm">
       <div>
@@ -43,27 +43,6 @@ function Details({ brand, year, name, rating, color, designer, gender }) {
           <RatingBar key={i} width={el} rate={el} />
         ))}
       </div>
-      {/* <div className="w-full border-b text-lg font-semibold">
-        <h1>Details</h1>
-      </div>
-      <div>
-        <p>Brand : {brand}</p>
-        <p>Year of realese : {year}</p>
-        <p>Name : {name}</p>
-        <p>Color : {color}</p>
-        <p>Designer :{designer}</p>
-        <p>Gender : {gender}</p>
-      </div>
-      <div>
-        {rating.map((el, i) => (
-          <progress
-            value={el}
-            max={10}
-            key={i}
-            className="m-2 block bg-greyC"
-          />
-        ))}
-      </div> */}
     </div>
   );
 }

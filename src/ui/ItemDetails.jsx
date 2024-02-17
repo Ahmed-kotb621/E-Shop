@@ -8,6 +8,7 @@ import ReactImageMagnify from 'react-image-magnify';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../features/cart/cartSlice';
 import toast from 'react-hot-toast';
+import { addToWish } from '../features/wishList/wishSlice';
 
 function ItemDetails({ item }) {
   const dispatch = useDispatch();
@@ -27,7 +28,6 @@ function ItemDetails({ item }) {
     release_year: year,
     gender,
     designer,
-    original_picture_url: largePicture,
     main_picture_url: main,
   } = item;
 
@@ -52,7 +52,6 @@ function ItemDetails({ item }) {
               },
             }}
           />
-          {/* <img src={picture} /> */}
         </div>
         <div className="mt-5 flex flex-col justify-between px-5 sm:mt-0">
           <h2 className="text-lg font-semibold">{brand}</h2>
@@ -87,7 +86,10 @@ function ItemDetails({ item }) {
               </span>{' '}
               Add to Cart
             </button>
-            <button className="ml-2 rounded-md bg-secondaryC  p-1 text-xl">
+            <button
+              className="ml-2 rounded-md bg-secondaryC  p-1 text-xl"
+              onClick={() => dispatch(addToWish(item))}
+            >
               <MdFavoriteBorder />
             </button>
           </div>

@@ -16,11 +16,9 @@ export function formateCurrency(cents) {
 
   return curreny.format(dollars);
 }
-
+// return Estimated time
 export function dateAfterOneWeek() {
   const today = new Date();
   const nextDay = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
   return `${nextDay.getDate()}-${nextDay.getMonth()}-${nextDay.getFullYear()}`;
 }
-
-console.log(dateAfterOneWeek());

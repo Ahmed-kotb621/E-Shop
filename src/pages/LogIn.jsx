@@ -11,22 +11,27 @@ function LogIn() {
     email: '',
     password: '',
   });
+
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user.user);
   const navigate = useNavigate();
+
   function handleChange(e) {
     const { name, value } = e.target;
     setFormData((data) => ({ ...data, [name]: value }));
   }
+
   function handleSubmit(e) {
     e.preventDefault();
     dispatch(addUser(formData));
     toast.success('LogIn Successfully');
     navigate('/login');
   }
+
   if (user.length > 0) {
     return <Order />;
   }
+
   return (
     <div className="flex items-center justify-center  p-8">
       <div className="w-[300px]  sm:w-[350px]">
@@ -35,7 +40,7 @@ function LogIn() {
           <div className="my-4 flex flex-col space-y-1">
             <label className="text-sm text-mainC">First Name</label>
             <input
-              className="text-s rounded-md border-none  bg-secondaryC p-2 focus:outline-none focus:ring focus:ring-yellowC focus:ring-offset-2"
+              className="form-input"
               value={formData.firstName}
               onChange={handleChange}
               placeholder="first name..."
@@ -47,7 +52,7 @@ function LogIn() {
           <div className="my-4 flex flex-col space-y-1">
             <label className="text-sm text-mainC">Last Name</label>
             <input
-              className="rounded-md border-none  bg-secondaryC p-2 focus:outline-none focus:ring focus:ring-yellowC focus:ring-offset-2"
+              className="form-input"
               value={formData.lastName}
               onChange={handleChange}
               placeholder="last name..."
@@ -59,7 +64,7 @@ function LogIn() {
           <div className="my-4 flex flex-col space-y-1">
             <label className="text-sm text-mainC">Email Address</label>
             <input
-              className="rounded-md border-none  bg-secondaryC p-2 focus:outline-none focus:ring focus:ring-yellowC focus:ring-offset-2"
+              className="form-input"
               value={formData.email}
               onChange={handleChange}
               placeholder="email..."
@@ -71,7 +76,7 @@ function LogIn() {
           <div className="my-4 flex flex-col space-y-1">
             <label className="text-sm text-mainC">Password</label>
             <input
-              className="rounded-md border-none  bg-secondaryC p-2 focus:outline-none focus:ring focus:ring-yellowC focus:ring-offset-2"
+              className="form-input"
               value={formData.password}
               onChange={handleChange}
               placeholder="password..."

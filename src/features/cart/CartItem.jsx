@@ -7,7 +7,6 @@ import {
   deleteFromCart,
   increaseCartQuantity,
 } from './cartSlice';
-import { IoAddOutline } from 'react-icons/io5';
 import { FaMinus, FaPlus } from 'react-icons/fa6';
 
 function CartItem({ cart }) {
@@ -15,13 +14,12 @@ function CartItem({ cart }) {
     name,
     color,
     grid_picture_url: image,
-    retail_price_cents: price,
     total_price,
-    gender,
     id,
     quantity,
   } = cart;
   const dispatch = useDispatch();
+
   function handleDelete(id) {
     dispatch(deleteFromCart(id));
   }
@@ -33,8 +31,8 @@ function CartItem({ cart }) {
     dispatch(decreaseCartQuanity(id));
   }
   return (
-    <div className="grid grid-cols-3 items-center justify-between border-b">
-      <div className="flex items-center justify-start ">
+    <div className="grid grid-cols-4 items-center justify-between gap-2 border-b sm:grid-cols-3">
+      <div className="col-span-3  col-start-1 flex items-center justify-start sm:col-span-1">
         <p>{quantity}x</p>
         <img
           src={image}
@@ -47,20 +45,18 @@ function CartItem({ cart }) {
         <p>{<Colors color={color} width="15px" height="15px" />}</p>
         <p className="ml-10 font-semibold">{formateCurrency(total_price)}</p>
       </div>
-      <div className="flex justify-around px-10">
-        <div>
+      <div className="col-span-2 col-start-3 my-3 flex justify-between  sm:justify-around">
+        <div className="flex">
           <button
             className="rounded-full bg-mainC p-1 text-secondaryC"
             onClick={() => decreaseQuantity(id)}
           >
-            {' '}
             <FaMinus />
           </button>
           <button
             className="ml-5 rounded-full bg-mainC p-1 text-secondaryC"
             onClick={() => increaseQuantity(id)}
           >
-            {' '}
             <FaPlus />
           </button>
         </div>

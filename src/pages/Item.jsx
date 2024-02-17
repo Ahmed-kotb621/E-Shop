@@ -15,7 +15,7 @@ function Item() {
 
   const allItems = items?.products || [];
   const item = allItems.find((el) => el.id === parseInt(id));
-  console.log(item);
+
   return (
     <div className="p-8">
       <ItemDetails item={item} />

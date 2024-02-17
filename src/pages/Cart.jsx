@@ -22,8 +22,9 @@ function Cart() {
     dispatch(addOrder(cart));
     navigate('/login');
   }
+
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-8">
       <h2 className="mb-10 text-xl font-bold text-mainC">Your Cart</h2>
       {cart.map((el, i) => (
         <CartItem cart={el} key={i} />

@@ -8,13 +8,16 @@ import EmptyOrder from '../../ui/EmptyOrder';
 function Order() {
   const user = useSelector((state) => state.user.user);
   const order = useSelector((state) => state.order.order);
+  const cart = useSelector((state) => state.cart.cart);
   const dispatch = useDispatch();
+
   function handleLogOut() {
     dispatch(deleteUser());
     toast.success('Log Out Successfully');
   }
   const [...orders] = order;
   const allorders = orders[order.length - 1];
+
   return (
     <div className="flex  flex-col items-center justify-center p-8">
       <h2 className="text-lg font-bold">Your Account</h2>
@@ -31,12 +34,14 @@ function Order() {
       </div>
       <div className="flex w-full flex-col items-center justify-center sm:w-[500px]">
         <h2 className="my-7 text-lg font-bold">Your Order</h2>
-        <h3 className="my-2">
-          Estimated Time :{' '}
-          <span className="rounded-md bg-yellowC p-1">
-            {dateAfterOneWeek()}
-          </span>
-        </h3>
+        {cart.length ? (
+          <h3 className="my-2">
+            Estimated Time :{' '}
+            <span className="rounded-md bg-yellowC p-1">
+              {dateAfterOneWeek()}
+            </span>
+          </h3>
+        ) : null}
         {allorders ? (
           allorders.map((el, i) => (
             <OrderItem

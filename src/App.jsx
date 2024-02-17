@@ -1,6 +1,6 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import Cart from './pages/cart';
+import Cart from './pages/Cart';
 import WishList from './pages/WishList';
 import PageNotFound from './pages/PageNotFound';
 import AppLayout from './ui/AppLayout';
@@ -13,6 +13,7 @@ import { Provider } from 'react-redux';
 import { store } from '../store';
 import { Toaster } from 'react-hot-toast';
 import LogIn from './pages/LogIn';
+import ProtectedRoutes from './pages/ProtectedRoutes';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -27,7 +28,13 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
           <Routes>
-            <Route element={<AppLayout />}>
+            <Route
+              element={
+                <ProtectedRoutes>
+                  <AppLayout />
+                </ProtectedRoutes>
+              }
+            >
               {/* <Route index element={<Navigate replace to="/" />} /> */}
               <Route path="/" element={<Home />} />
               <Route path="cart" element={<Cart />} />

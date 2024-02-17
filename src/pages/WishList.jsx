@@ -14,7 +14,7 @@ function WishList() {
     toast.success('List Cleared Successfully');
   }
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-8">
       <h1 className="text-lg font-semibold">Your Wish List.</h1>
       {wishList.map((item, i) => (
         <WishListItem wishItem={item} key={i} />

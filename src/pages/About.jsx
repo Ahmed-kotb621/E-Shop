@@ -12,7 +12,7 @@ function About() {
         />
         <div>
           <h1 className="my-4 text-2xl font-bold">About Us</h1>
-          <p className=" text-greyC">
+          <p className=" max-w-[70%] text-greyC">
             Welcome to Sneakers, where passion meets style and innovation.
             We&apos;re more than just a website. we&apos;re a community of
             sneaker enthusiasts, collectors, and trendsetters dedicated to
@@ -21,7 +21,7 @@ function About() {
         </div>
         <div>
           <h1 className="my-4 text-2xl font-bold">Our Mission</h1>
-          <p className="text-greyC">
+          <p className="max-w-[70%] text-greyC">
             At <span>Sneakers</span>, our mission is simple: to provide
             sneakerheads worldwide with a premium platform where they can
             discover, shop, and connect. We strive to curate the latest and most

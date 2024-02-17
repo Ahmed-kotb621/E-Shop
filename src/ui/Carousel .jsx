@@ -4,8 +4,10 @@ import { FaAngleLeft } from 'react-icons/fa6';
 import { FaAngleRight } from 'react-icons/fa6';
 import image1 from '../assets/images/fashion-shoes2.png';
 import image2 from '../assets/images/hero-img2.png';
+
 function Carousel() {
   const [current, setCurrent] = useState(0);
+
   const carousles = [
     <CarouselItem
       image={image1}
@@ -20,20 +22,22 @@ function Carousel() {
       key="2"
     />,
   ];
+
   const next = () => {
     setCurrent((current + 1) % carousles.length);
   };
   const prev = () => {
     setCurrent((current - 1 + carousles.length) % carousles.length);
   };
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     next();
-  //   }, 3000);
-  //   return () => clearInterval(interval);
-  // }, [current]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      next();
+    }, 2000);
+    return () => clearInterval(interval);
+  }, [current]);
+
   return (
-    <div className="relative p-8">
+    <div className="relative p-4 sm:p-8">
       {carousles[current]}
       <div className="absolute inset-0 flex w-full items-center justify-between p-12 text-xl">
         <button

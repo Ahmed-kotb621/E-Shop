@@ -24,7 +24,7 @@ function Search() {
       : null;
 
   return (
-    <div className="relative sm:block">
+    <div className="relative">
       <div>
         <input
           type="text"

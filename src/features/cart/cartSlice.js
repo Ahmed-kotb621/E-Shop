@@ -9,7 +9,15 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart(state, action) {
-      state.cart.push(action.payload);
+      const findProduct = state.cart.find(
+        (product) => product.id === action.payload.id,
+      );
+      if (findProduct) {
+        findProduct.quantity += 1;
+      } else {
+        action.payload.quantity = 1;
+        state.cart.push(action.payload);
+      }
     },
     clearCart(state) {
       state.cart = [];
