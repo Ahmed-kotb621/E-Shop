@@ -1,6 +1,8 @@
 ## E-Shop
 
-E-shop is a front-end project built using react.js and tailwind css , it's a Single Page Applications (SPA) designed for shopping experience . User can explore diferrent sneakers , add or remove items from cart and wishlist , user register with name and email , adjust item quantities,see real-time price updates and placing order.
+Sneakers is a front-end project built using react.js and tailwind css , it's a Single Page Applications (SPA) designed for shopping experience . User can explore diferrent sneakers , add or remove items from cart and wishlist , user register with name and email , adjust item quantities,see real-time price updates and placing order.
+
+## ScreenShots
 
 ## Installation and Usage
 
@@ -21,16 +23,6 @@ To run E-shop on your local machine, follow these steps:
    ```
 4. **Open your Browser: visit (http://localhost:5173/)**
 
-## Technologies Used
-
-- Vite
-- React.js
-- React Query.
-- Tailwind css
-- Css Modules
-- Hooks (useState,useEffect,useParams,useNavigate).
-- State Management (Redux, Redux toolkit).
-- react icons & react hot toast.
-- Fake Authonication protecting a route.
-
+![sneaker-2](https://github.com/Ahmed-kotb621/sneakers/assets/75045581/9af5fcc6-0d90-497e-a731-6cb3b62bb967)
 ## Deployment
+Sneakers is deployed on Neltify : [Sneaker-e-commerce](https://sneakers-e.netlify.app/)
