@@ -24,6 +24,16 @@ To run Sneakers on your local machine, follow these steps:
    ```
 4. **Open your Browser: visit (http://localhost:5173/)**
 
+## Technologies Used
 
+- Vite
+- React.js
+- React Query
+- Tailwind css
+- Css Modules
+- Hooks (useState,useEffect,useParams).
+- State Management (Redux, Redux toolkit,useNavigate)
+- react icons & react hot toast
+  
 ## Deployment
 Sneakers is deployed on Neltify : [Sneaker-e-commerce](https://sneakers-e.netlify.app/)
