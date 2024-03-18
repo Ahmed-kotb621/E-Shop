@@ -12,7 +12,7 @@ To run Sneakers on your local machine, follow these steps:
 1. **Clone the Repository :**
    ```bash
    git clone https://github.com/Ahmed-kotb621/sneakers.git
-   cd the-wild-oasis
+   cd sneakers
    ```
 2. **Install Dependancies :**
    ```bash
@@ -28,12 +28,11 @@ To run Sneakers on your local machine, follow these steps:
 
 - Vite
 - React.js
-- SupaBase DataBase
+- Tailwind Css
 - React Query
-- Styled Components
-- Hooks (useState,useEffect,useSearchParams,useContext).
-- Custom Hooks
+- css Modules
+- Hooks (useState,useEffect,useParams).
 - react icons & react hot toast
   
 ## Deployment
-Sneakers is deployed on Neltify : [wild-oasis-hotels](https://wild-oasis-hotels.netlify.app/login)
+Sneakers is deployed on Neltify : [sneakers](https://sneakers-e.netlify.app/)
