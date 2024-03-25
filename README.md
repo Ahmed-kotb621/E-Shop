@@ -30,6 +30,7 @@ To run Sneakers on your local machine, follow these steps:
 - React.js
 - Tailwind Css
 - React Query
+- Redux Toolkit
 - css Modules
 - Hooks (useState,useEffect,useParams).
 - react icons & react hot toast
